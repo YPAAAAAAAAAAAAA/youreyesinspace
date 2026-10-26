@@ -1,0 +1,20 @@
+{
+  "id": "youreyesinspace",
+  "title": {
+    "en": "youreyesinspace",
+    "zh": "你的太空之眼"
+  },
+  "intro": {
+    "en": "Fly a stylized universe on your phone, from the Sun and planets out through the Milky Way to the edge of the observable cosmos. One finger orbits, two fingers zoom, tap a world.",
+    "zh": "在手机上飞行于一座风格化的宇宙：从太阳和行星出发，穿过银河，直到可观测宇宙的边缘。单指环绕，双指缩放，点按天体。"
+  },
+  "officialFiles": [
+    "vendor/index.html",
+    "vendor/space.css",
+    "vendor/space.js",
+    "vendor/LICENSE.txt"
+  ],
+  "playHtml": "play.html",
+  "aspect": "phone",
+  "githubRepo": "ypaaaaaaaaaaaaa/youreyesinspace"
+}
