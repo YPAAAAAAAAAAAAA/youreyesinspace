@@ -1,0 +1,143 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #07060f;
+  color: #f4ead8;
+  font-family: system-ui, -apple-system, sans-serif;
+  overscroll-behavior: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#stage {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+#where {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+  margin: 0;
+  text-align: center;
+  pointer-events: none;
+  font-size: 13px;
+  font-weight: 620;
+  letter-spacing: 0.01em;
+  color: rgba(244, 234, 216, 0.88);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+}
+#where small {
+  display: block;
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(232, 206, 164, 0.72);
+}
+footer {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 54px;
+  margin: 0;
+  max-height: 28vh;
+  overflow: auto;
+  font-size: 11px;
+  line-height: 1.35;
+  color: rgba(244, 234, 216, 0.82);
+  text-shadow: 0 1px 3px #000;
+  pointer-events: none;
+}
+footer small {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  color: rgba(244, 234, 216, 0.62);
+}
+html.gb-ui-open footer {
+  display: block;
+}
+#sheet {
+  display: none;
+  position: absolute;
+  left: 8px;
+  bottom: 46px;
+  width: min(74vw, 270px);
+  max-height: 38vh;
+  overflow: auto;
+  padding: 10px 10px 8px;
+  border-radius: 14px;
+  background: rgba(10, 8, 16, 0.78);
+  border: 1px solid rgba(244, 220, 180, 0.18);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+html.gb-ui-open #sheet {
+  display: block;
+}
+#sheet .k {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(232, 206, 164, 0.7);
+}
+#sheet-name {
+  margin: 2px 0 0;
+  font-size: 18px;
+  font-weight: 680;
+  letter-spacing: 0.01em;
+}
+#sheet-dist, #sheet-blurb {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(244, 234, 216, 0.82);
+}
+#jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+#jumps button {
+  min-height: 36px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(244, 220, 180, 0.28);
+  background: rgba(244, 220, 180, 0.08);
+  color: #f6ecdc;
+  font: 600 12px/1.1 system-ui, sans-serif;
+  touch-action: manipulation;
+}
+#eye-toggle {
+  position: fixed;
+  top: 6px;
+  right: 6px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font: 20px/40px system-ui, sans-serif;
+  opacity: 0.75;
+  z-index: 4;
+  touch-action: manipulation;
+}
