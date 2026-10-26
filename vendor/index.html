@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>youreyesinspace</title>
+<link rel="stylesheet" href="space.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="canvas"></canvas>
+  <p id="where">Earth<small>close orbit</small></p>
+  <footer id="credit">
+    <span id="hint">One finger orbits · two fingers zoom · tap a world</span>
+    <small>idea after @berkcomba (berkcomba/youreyesinspace); clean-room implementation, no code copied</small>
+  </footer>
+  <div id="sheet">
+    <p class="k">Now</p>
+    <h2 id="sheet-name">Earth</h2>
+    <p id="sheet-dist"></p>
+    <p id="sheet-blurb"></p>
+    <div id="jumps"></div>
+  </div>
+</div>
+<script src="space.js"></script>
+<script>
+(function () {
+  if (window.__gbSandbox) return;
+  var eye = document.createElement("button");
+  eye.type = "button";
+  eye.id = "eye-toggle";
+  eye.setAttribute("aria-label", "Guide");
+  eye.textContent = "\u2699";
+  eye.addEventListener("click", function (e) {
+    e.stopPropagation();
+    document.documentElement.classList.toggle("gb-ui-open");
+  });
+  document.body.appendChild(eye);
+})();
+</script>
+</body>
+</html>
